@@ -1,0 +1,16 @@
+
+spring:
+  application:
+    name: registry-app
+
+
+server:
+  port: 8761
+
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    fetch-registry: false # we don't want to fetch the registry
+    register-with-eureka: false # we don't want it to be a eureka service itself
